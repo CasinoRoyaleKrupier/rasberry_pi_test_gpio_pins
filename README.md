@@ -1,4 +1,4 @@
 # Compile
 ```
-g++ *.cpp -o gpio_test -l wiringPi
+g++ *.cpp -o gpio-test -l wiringPi
 ```
