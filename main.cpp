@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <wiringPi.h>
 
+using namespace std;
+
 int main() {
 	wiringPiSetupGpio();
 	int pin;
