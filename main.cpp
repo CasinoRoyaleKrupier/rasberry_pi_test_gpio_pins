@@ -9,19 +9,20 @@ int main() {
 	int pin;
 
 	system("clear");
-	cout << "GPIO pin: " << endl;
+	cout << "GPIO pin: ";
 	cin >> pin;
+	cout << endl;
 
 	pinMode(pin, OUTPUT);
 	system("clear");
 
-	for(;;) {
+	for(int i = 1; i <= 10; i++) {
 		digitalWrite(pin, HIGH);
-		cout << "Pin " << pin << ", status HIGH" << endl;
+		cout << "Pin " << pin << ", status HIGH, " << i << "/10" << endl;
 		delay(1000);
 		system("clear");
 		digitalWrite(pin, LOW);
-		cout << "Pin " << pin << ", status LOW" << endl;
+		cout << "Pin " << pin << ", status LOW" << i << "/10" endl;
 		delay(1000);
 		system("clear");
 	}
